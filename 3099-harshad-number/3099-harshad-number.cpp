@@ -5,9 +5,7 @@ public:
         int num = x;
 
         while(num){
-            int rem = 0;
-            rem = num % 10;
-            sum += rem;
+            sum +=  num % 10;
             num = num / 10;
         }
         if(x % sum == 0) return sum;
