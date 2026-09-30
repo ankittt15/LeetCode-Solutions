@@ -1,7 +1,8 @@
 class Solution {
 public:
     bool validDigit(int n, int x) {
-        int check = 0, first = 0;
+        int first = 0;
+        bool check = 0;
 
         while(n){
             first = n % 10;
