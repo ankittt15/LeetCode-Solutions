@@ -4,13 +4,11 @@ public:
         int digitSum = 0, squareSum = 0;
 
         while(n){
-            int rem;
-            rem = n % 10;
+            int rem = n % 10;
             digitSum += rem;
             squareSum = squareSum + rem * rem;
             n/= 10;
         }
-        if(squareSum - digitSum >= 50) return 1;
-        return 0;
+        return squareSum - digitSum >= 50;
     }
 };
